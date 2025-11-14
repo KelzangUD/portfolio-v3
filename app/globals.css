@@ -58,6 +58,9 @@
     @apply text-xs md:text-sm lg:text-lg lg:leading-6 xl:text-xl 2xl:text-2xl;
     font-family: var(--font-inter), sans-serif;
   }
+  section {
+    @apply p-5 md:p-10 xl:p-15 2xl:p-20;
+  }
 }
 
 @keyframes bounce {
@@ -75,4 +78,18 @@
 body {
   background-color: var(--background);
   font-family: var(--font-inter), sans-serif;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 }
