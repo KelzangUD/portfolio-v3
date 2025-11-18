@@ -45,7 +45,7 @@ export default function Nav() {
       </div>
       <div>
         <Link
-          href="/"
+          href="/contact-me"
           className="rounded-full bg-black button text-white text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center"
         >
           <Button>Contact Me</Button>

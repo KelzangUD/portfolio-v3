@@ -74,7 +74,7 @@ export const VideoCard = ({
     >
       <AnimatePresence mode="wait">
         <motion.div
-          className="relative h-80 w-full rounded-2xl overflow-hidden"
+          className="relative md:h-80 2xl:h-120 w-full rounded-2xl overflow-hidden"
           initial="initial"
           whileHover={direction}
           exit="exit"

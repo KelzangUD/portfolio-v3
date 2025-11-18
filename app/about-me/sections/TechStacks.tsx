@@ -8,7 +8,7 @@ export default function TechStacks() {
     <CustomContainer>
       <section>
         <Title title="Tools I Use To Turn Ideas Into Reality" />
-        <div className="my-15 flex flex-col antialiased items-center justify-center relative overflow-hidden">
+        <div className="mt-15 flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={techStacks}
             direction="left"

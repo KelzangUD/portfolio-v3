@@ -59,7 +59,7 @@
     font-family: var(--font-inter), sans-serif;
   }
   section {
-    @apply p-5 md:p-10 xl:p-15 2xl:p-20;
+    @apply p-5 md:p-10 xl:p-15 2xl:py-20;
   }
 }
 

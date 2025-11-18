@@ -11,7 +11,7 @@ export default function FeaturedProjects() {
     <CustomContainer>
       <section>
         <Title title="Featured Projects" />
-        <div className="grid md:grid-cols-2 gap-6 my-15">
+        <div className="grid md:grid-cols-2 md:gap-6 2xl:gap-8 my-15">
           {featuredProjects?.map((project) => (
             <ProjectCardContainer
               key={project?.title}
