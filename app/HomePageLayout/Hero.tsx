@@ -14,13 +14,13 @@ export default function Hero() {
         <BackgroundRippleEffect />
         <section className="text-center mt-30">
           <h6 className="text-secondary">Hello,I'm Kelzang Ugyen Dorji</h6>
-          <h6 className="text-secondary my-1">
+          <h6 className="text-secondary md:my-1">
             A Full-Stack Developer | IoT Enthusiast | Aspiring Content Creator
           </h6>
-          <div className="flex items-center justify-center my-25">
+          <div className="flex items-center justify-center my-15 md:my-25">
             <LayoutTextFlip />
           </div>
-          <div className="flex gap-4 justify-center my-15">
+          <div className="flex gap-4 justify-center my-15 md:my-15">
             <Link
               href="/"
               className="cursor-pointer hover:-translate-y-0.5 transition duration-200"
@@ -34,8 +34,8 @@ export default function Hero() {
               <Button>Contact Me</Button>
             </Link>
           </div>
-          <div className="flex justify-center items-center gap-6 animate-bounce">
-            <span className="relative w-4 h-4">
+          <div className="flex justify-center items-center gap-2 md:gap-6 animate-bounce">
+            <span className="relative h-2 w-2 md:w-4 md:h-4">
               <Image
                 src={downArrowsIcon}
                 alt="arrow"
@@ -44,7 +44,7 @@ export default function Hero() {
               />
             </span>
             <h6 className="text-secondary">See My Works</h6>
-            <span className="relative w-4 h-4">
+            <span className="relative h-2 w-2 md:w-4 md:h-4">
               <Image
                 src={downArrowsIcon}
                 alt="arrow"

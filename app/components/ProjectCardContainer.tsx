@@ -19,7 +19,7 @@ export default function ProjectCardContainer({
       <CardBody className="w-full">
         <CardItem
           translateZ="100"
-          className="relative w-full xl:h-70 2xl:h-100 rounded-2xl overflow-hidden"
+          className="relative w-full h-50 xl:h-70 2xl:h-100 rounded-2xl overflow-hidden"
         >
           <Image src={mockUp} alt={title} fill className="object-cover" />
         </CardItem>
@@ -30,7 +30,7 @@ export default function ProjectCardContainer({
           </span>
           <span>
             <Link href={href} className="flex gap-2 items-center hover:-translate-y-2 transition duration-200">
-              <span className="relative w-6 h-6">
+              <span className="relative h-4 w-4 md:w-6 md:h-6">
                 <Image
                   src={arrowUpRightIcon}
                   alt="arrow up right"

@@ -28,6 +28,7 @@ export default function Nav() {
         position: "fixed",
         zIndex: "50",
         top: "0",
+        pointerEvents: "none",
       }}
       className="w-screen h-screen bg-transparent"
     >

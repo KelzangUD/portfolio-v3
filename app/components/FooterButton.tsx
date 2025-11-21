@@ -31,7 +31,7 @@ export function FooterButton({
   return (
     <Component
       className={cn(
-        "relative h-15 w-50 overflow-hidden bg-white p-[0.8px] text-xl rounded-full",
+        "relative h-9 md:h-15 w-30 md:w-50 overflow-hidden bg-white p-[0.8px] text-xl rounded-full",
         containerClassName,
       )}
       {...otherProps}

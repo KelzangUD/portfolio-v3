@@ -74,7 +74,7 @@ export const VideoCard = ({
     >
       <AnimatePresence mode="wait">
         <motion.div
-          className="relative md:h-80 2xl:h-120 w-full rounded-2xl overflow-hidden"
+          className="relative h-50 md:h-80 2xl:h-120 w-full rounded-2xl overflow-hidden"
           initial="initial"
           whileHover={direction}
           exit="exit"
@@ -97,7 +97,7 @@ export const VideoCard = ({
           </motion.div>
         </motion.div>
       </AnimatePresence>
-      <motion.div className="flex justify-between items-center p-4">
+      <motion.div className="flex justify-between gap-2 items-center p-4">
         <span>
           <p className="text-sm md:text-base font-semibold">{title}</p>
           <p className="text-sm md:text-base text-secondary">{subtitle}</p>
@@ -109,7 +109,7 @@ export const VideoCard = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="relative w-6 h-6">
+            <span className="relative h-4 w-4 md:w-6 md:h-6">
               <Image
                 src={arrowUpRightIcon}
                 alt="arrow up right"

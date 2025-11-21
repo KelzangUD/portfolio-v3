@@ -11,7 +11,7 @@ export default function FeaturedProjects() {
     <CustomContainer>
       <section>
         <Title title="Featured Projects" />
-        <div className="grid md:grid-cols-2 md:gap-6 2xl:gap-8 my-15">
+        <div className="grid md:grid-cols-2 gap-6 2xl:gap-8 my-5 md:my-15">
           {featuredProjects?.map((project) => (
             <ProjectCardContainer
               key={project?.title}
@@ -27,7 +27,7 @@ export default function FeaturedProjects() {
           className="flex justify-center items-center gap-2 hover:-translate-y-0.5 transition duration-200"
         >
           <h6 className="text-secondary">View All Works</h6>
-          <span className="relative w-7 h-7">
+          <span className="relative h-4 w-4 md:w-7 md:h-7">
             <Image
               src={arrowUpRightIcon}
               alt="arrow up right"

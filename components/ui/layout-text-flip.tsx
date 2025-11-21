@@ -4,8 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const LayoutTextFlip = ({
-  firstWord = "Exploring",
-  secondWord = "With",
+  firstWord = "Exploring With",
   lastWords = ["Purpose", "Passion"],
   duration = 3000,
 }: {
@@ -25,28 +24,21 @@ export const LayoutTextFlip = ({
   }, []);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col md:gap-4">
       <div>
         <motion.span
           layout
-          style={{ fontFamily: 'var(--font-p)' }}
-          className="font-semibold tracking-tight drop-shadow-lg text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+          style={{ fontFamily: "var(--font-p)" }}
+          className="font-semibold tracking-tight drop-shadow-lg text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
         >
           {firstWord}
-        </motion.span>
-        <motion.span
-          layoutId="subtext"
-          style={{ fontFamily: 'var(--font-p)' }}
-          className="font-bold text-secondary tracking-tight drop-shadow-lg mx-5 text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-        >
-          {secondWord}
         </motion.span>
       </div>
       <div>
         <motion.span
           layout
-          style={{ fontFamily: 'var(--font-p)' }}
-          className="relative w-fit py-2 font-bold tracking-tight text-secondary drop-shadow-lg text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+          style={{ fontFamily: "var(--font-p)" }}
+          className="relative w-fit py-2 font-bold tracking-tight text-secondary drop-shadow-lg text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
         >
           <AnimatePresence mode="popLayout">
             <motion.span

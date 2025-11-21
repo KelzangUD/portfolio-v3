@@ -30,7 +30,7 @@ export default function Spinner({ number }: { number: number }) {
   }, [isInView, number]);
 
   return (
-    <motion.pre ref={ref} className="text-8xl font-normal">
+    <motion.pre ref={ref} className="text-2xl md:text-8xl font-normal">
       <motion.span>{rounded}</motion.span>
     </motion.pre>
   );

@@ -12,7 +12,7 @@ export default function Videos() {
     <CustomContainer>
       <section>
         <Title title="Through My Lens" />
-        <div className="grid md:grid-cols-2 my-15 gap-8">
+        <div className="grid md:grid-cols-2 my-5 md:my-15 gap-6 md:gap-8">
           <VideoCard
             imageUrl={JomolhariTrekCover}
             title="Jomolhari Vacation"
@@ -33,7 +33,7 @@ export default function Videos() {
           className="flex justify-center items-center gap-2 hover:-translate-y-0.5 transition duration-200"
         >
           <h6 className="text-secondary">Watch Videos</h6>
-          <span className="relative w-7 h-7">
+          <span className="relative w-4 h-4 md:w-7 md:h-7">
             <Image
               src={arrowUpRightIcon}
               alt="arrow up right"

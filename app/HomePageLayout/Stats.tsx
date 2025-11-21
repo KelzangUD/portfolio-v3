@@ -7,7 +7,7 @@ export default function Stats() {
     <CustomContainer>
       <section>
         <Title title="Key Metrics in the Numbers" />
-        <div className="flex justify-between mt-15">
+        <div className="flex justify-between mt-5 md:mt-15">
           <span className="text-center">
             <Spinner number={2} />
             <h6 className="text-secondary">Projects</h6>
@@ -17,7 +17,7 @@ export default function Stats() {
             <h6 className="text-secondary">Blogs</h6>
           </span>
           <span className="text-center">
-            <h1 className="text-8xl font-normal flex justify-center">
+            <h1 className="text-xl md:text-8xl font-normal flex justify-center items-center">
               <Spinner number={5} />+
             </h1>
             <h6 className="text-secondary">Years as developer</h6>
