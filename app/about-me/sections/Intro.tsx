@@ -40,8 +40,8 @@ export default function Intro() {
               },
             ]}
           />
-          <div className="flex items-center justify-left my-5">
-            <p className="text-secondary text-justify leading-8">
+          <div className="flex items-center justify-left md:my-5">
+            <p className="text-secondary text-justify leading-5 md:leading-8">
               Currently, am software developer in Tashi InfoComm Private
               Limited. In my spare time, I enjoy creating contents on various
               platform like YouTube, Instagram and TikTok. My weekends and free
@@ -49,7 +49,7 @@ export default function Intro() {
               the Land of the Thunder Dragon.
             </p>
           </div>
-          <div className="flex gap-4 justify-left my-15">
+          <div className="flex gap-4 justify-left my-10 md:my-15">
             <a
               href="/"
               className="cursor-pointer hover:-translate-y-0.5 transition duration-200"
@@ -63,8 +63,8 @@ export default function Intro() {
               <Button>Contact Me</Button>
             </Link>
           </div>
-          <div className="flex justify-center items-center gap-6 animate-bounce">
-            <span className="relative w-4 h-4">
+          <div className="flex md:justify-center items-center gap-4 md:gap-6 animate-bounce">
+            <span className="relative w-2 h-2 md:w-4 md:h-4">
               <Image
                 src={downArrowsIcon}
                 alt="arrow"
@@ -73,7 +73,7 @@ export default function Intro() {
               />
             </span>
             <h6 className="text-secondary">More About Me</h6>
-            <span className="relative w-4 h-4">
+            <span className="relative w-2 h-2 md:w-4 md:h-4">
               <Image
                 src={downArrowsIcon}
                 alt="arrow"

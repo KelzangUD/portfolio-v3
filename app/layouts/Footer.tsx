@@ -14,7 +14,7 @@ const socialItems = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black py-10 px-10 md:px-20 xl:py-15 xl:px-30 2xl:py-20 2xl:px-40 text-white">
+    <footer className="bg-[#000] py-10 px-10 md:px-20 xl:py-15 xl:px-30 2xl:py-20 2xl:px-40 text-white">
       <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-4">
         <span className="flex flex-col gap-2 md:gap-6">
           <h3 className="text-secondary">Let's Connect</h3>

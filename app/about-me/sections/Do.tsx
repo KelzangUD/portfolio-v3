@@ -17,7 +17,7 @@ export default function Do() {
         className="bg-cover bg-center bg-no-repeat bg-white/80 bg-blend-overlay"
       >
         <Title title="What I Do" />
-        <div className="flex flex-col gap-10 my-15 w-[70%]">
+        <div className="flex flex-col gap-6 md:gap-10 my-5 md:my-15 md:w-[70%]">
           <WhatIDoItem
             icon={appIcon}
             title="Application Development"
