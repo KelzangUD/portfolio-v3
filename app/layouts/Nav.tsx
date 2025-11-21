@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 // import Link from "next/link";
 // import logoIcon from "@/public/logo.svg";
 // import { Button } from "@/components/ui/moving-border";
@@ -12,22 +12,31 @@ const menuItems = [
   { label: "Contact", ariaLabel: "Get in touch", link: "/contact-me" },
 ];
 
+const socialItems = [
+  {
+    label: "LinkedIn",
+    link: "https://www.linkedin.com/in/kelzang-ugyen-dorji-a461b979/",
+  },
+  { label: "Instagram", link: "https://www.instagram.com/kud_capture/" },
+  { label: "YouTube", link: "https://www.youtube.com/@kud_capture" },
+];
+
 export default function Nav() {
   return (
     <nav
       style={{
-        height: "12vh",
-        width: "100%",
-        background: "#1a1a1a",
         position: "fixed",
-        zIndex: "40",
+        zIndex: "50",
         top: "0",
       }}
+      className="w-screen h-screen bg-transparent"
     >
       <StaggeredMenu
         position="right"
         items={menuItems}
-        displayItemNumbering={true}
+        socialItems={socialItems}
+        displaySocials={true}
+        // displayItemNumbering={true}
         menuButtonColor="#fff"
         openMenuButtonColor="#fff"
         changeMenuColorOnOpen={true}
