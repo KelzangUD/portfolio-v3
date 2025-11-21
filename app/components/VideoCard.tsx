@@ -68,7 +68,7 @@ export const VideoCard = ({
       onMouseEnter={handleMouseEnter}
       ref={ref}
       className={cn(
-        "h-full w-full bg-gray-100 rounded-lg overflow-hidden group/card relative",
+        "h-full w-full bg-gray-100 rounded-lg overflow-hidden group/card relative shadow-xs ",
         className
       )}
     >

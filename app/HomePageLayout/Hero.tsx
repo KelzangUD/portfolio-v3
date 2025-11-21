@@ -12,7 +12,7 @@ export default function Hero() {
     <>
       <CustomContainer>
         <BackgroundRippleEffect />
-        <section className="text-center mt-15">
+        <section className="text-center mt-30">
           <h6 className="text-secondary">Hello,I'm Kelzang Ugyen Dorji</h6>
           <h6 className="text-secondary my-1">
             A Full-Stack Developer | IoT Enthusiast | Aspiring Content Creator

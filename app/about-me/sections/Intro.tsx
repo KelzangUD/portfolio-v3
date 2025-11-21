@@ -13,7 +13,7 @@ export default function Intro() {
     <>
       <CustomContainer>
         {/* <BackgroundRippleEffect /> */}
-        <section className="text-left mt-15">
+        <section className="text-left mt-30">
           <h2 className="text-secondary">Kuzuzangpo,</h2>
           <TypewriterEffectSmooth
             words={[

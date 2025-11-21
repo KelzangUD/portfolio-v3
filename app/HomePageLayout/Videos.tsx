@@ -27,7 +27,9 @@ export default function Videos() {
           />
         </div>
         <Link
-          href="/vlogs"
+          href="https://www.youtube.com/@kud_capture"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex justify-center items-center gap-2 hover:-translate-y-0.5 transition duration-200"
         >
           <h6 className="text-secondary">Watch Videos</h6>

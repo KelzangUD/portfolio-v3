@@ -6,13 +6,13 @@ import { ContactForm } from "./components/ContactForm";
 export default function ContactMe() {
   return (
     <CustomContainer>
-      <section className="mt-15">
+      <section className="mt-30">
         <Title title="Let’s Connect" />
         <div className="grid md:grid-cols-2 gap-6 2xl:gap-8">
           <div className="flex items-center">
             <ReactOut />
           </div>
-          <div className="relative">
+          <div>
             <ContactForm />
           </div>
         </div>
