@@ -29,7 +29,7 @@ export const LayoutTextFlip = ({
         <motion.span
           layout
           style={{ fontFamily: "var(--font-p)" }}
-          className="font-semibold tracking-tight drop-shadow-lg text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+          className="font-semibold tracking-tight drop-shadow-lg text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
         >
           {firstWord}
         </motion.span>
@@ -38,7 +38,7 @@ export const LayoutTextFlip = ({
         <motion.span
           layout
           style={{ fontFamily: "var(--font-p)" }}
-          className="relative w-fit py-2 font-bold tracking-tight text-secondary drop-shadow-lg text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+          className="relative w-fit py-2 font-bold tracking-tight text-secondary drop-shadow-lg text-4xl sm:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
         >
           <AnimatePresence mode="popLayout">
             <motion.span

@@ -9,7 +9,7 @@ export default function WhatIDo() {
     <CustomContainer>
       <section>
         <Title title="What I Can Do For You" />
-        <div className="grid md:grid-cols-2 justify-around gap-6 mt-5 md:mt-15">
+        <div className="grid md:grid-cols-2 md:justify-around gap-6 mt-5 md:mt-15">
           <div className="flex items-center">
             <WhatIDoTextFlip />
           </div>

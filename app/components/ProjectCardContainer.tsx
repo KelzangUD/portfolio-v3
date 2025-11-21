@@ -19,7 +19,7 @@ export default function ProjectCardContainer({
       <CardBody className="w-full">
         <CardItem
           translateZ="100"
-          className="relative w-full h-50 xl:h-70 2xl:h-100 rounded-2xl overflow-hidden"
+          className="relative w-full h-50 sm:h-70 md:h-50 2xl:h-100 rounded-2xl overflow-hidden"
         >
           <Image src={mockUp} alt={title} fill className="object-cover" />
         </CardItem>
