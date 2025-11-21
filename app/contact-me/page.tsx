@@ -6,9 +6,9 @@ import { ContactForm } from "./components/ContactForm";
 export default function ContactMe() {
   return (
     <CustomContainer>
-      <section className="mt-30">
+      <section className="mt-25">
         <Title title="Let’s Connect" />
-        <div className="grid md:grid-cols-2 gap-6 2xl:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 2xl:gap-8 my-5">
           <div className="flex items-center">
             <ReactOut />
           </div>

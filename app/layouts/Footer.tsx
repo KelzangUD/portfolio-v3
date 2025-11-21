@@ -63,7 +63,7 @@ export default function Footer() {
           </span>
           <span className="flex items-center md:justify-end w-full md:mt-4">
             {socialItems && socialItems.length > 0 && (
-              <div className="flex flex-col gap-2" aria-label="Social links">
+              <div className="flex flex-col" aria-label="Social links">
                 <h3>Socials</h3>
                 <ul className="sm-socials-list" role="list">
                   {socialItems.map((s, i) => (

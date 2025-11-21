@@ -23,7 +23,7 @@ export const ReactOut = ({
   }, []);
 
   return (
-    <div className="gap-4 flex flex-col">
+    <div className="md:gap-4 flex flex-col">
       <div>
         <motion.span
           layoutId="subtext"

@@ -7,12 +7,12 @@ import { featuredProjects } from "../data/featuredProject";
 export default function ContactMe() {
   return (
     <CustomContainer>
-      <section className="mt-30">
+      <section className="mt-25">
         <Title title="Ideas Brought To Life" />
-        <div className="md:mt-15 max-w-4/10">
+        <div className="mt-5 md:mt-15 md:max-w-4/10">
           <Placeholder />
         </div>
-        <div className="grid md:grid-cols-2 md:gap-6 2xl:gap-8 my-15">
+        <div className="grid md:grid-cols-2 gap-6 2xl:gap-8 my-5 md:my-15">
           {featuredProjects?.map((project) => (
             <ProjectCardContainer
               key={project?.title}

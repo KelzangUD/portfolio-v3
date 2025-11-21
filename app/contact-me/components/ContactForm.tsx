@@ -11,7 +11,7 @@ export function ContactForm() {
   };
   return (
     <>
-      <div className="shadow-xs w-full border border-gray-100 p-10 rounded-md">
+      <div className="shadow-xs w-full border border-gray-100 p-4 md:p-10 rounded-md">
         <div className="relative w-full">
           <div className="absolute inset-0 h-full w-full scale-[0.80] transform rounded-2xl blur-3xl scale-[0.80] transform rounded-full bg-gray-100 bg-gradient-to-r from-gray-50 to-gray-100 blur-10xl" />
           <div className="relative flex h-full w-full flex-col items-start justify-end overflow-hidden">
