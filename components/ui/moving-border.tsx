@@ -31,7 +31,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        "relative w-30 h-10 overflow-hidden bg-transparent p-[0.8px] text-xl rounded-full",
+        "relative w-25 md:w-30 h-8 md:h-10 overflow-hidden bg-transparent p-[0.8px] tex-sm md:text-xl rounded-full",
         containerClassName,
       )}
       {...otherProps}
@@ -51,7 +51,7 @@ export function Button({
 
       <div
         className={cn(
-          "relative flex h-full w-full items-center justify-center bg-black text-sm text-white antialiased backdrop-blur-xl rounded-full hover:cursor-pointer",
+          "relative flex h-full w-full items-center justify-center bg-black text-xs md:text-sm text-white antialiased backdrop-blur-xl rounded-full hover:cursor-pointer",
           className,
         )}
       >

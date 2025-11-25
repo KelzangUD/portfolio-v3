@@ -1,6 +1,6 @@
 import CustomContainer from "../components/CustomContainer";
 import Title from "@/components/ui/Title";
-import Spinner from "../components/Spinner";
+import CountUp from "@/components/ui/CountUp";
 
 export default function Stats() {
   return (
@@ -9,21 +9,52 @@ export default function Stats() {
         <Title title="Key Metrics in the Numbers" />
         <div className="flex justify-between mt-5 md:mt-15">
           <span className="text-center">
-            <Spinner number={2} />
+            <CountUp
+              from={0}
+              to={2}
+              separator=","
+              direction="up"
+              duration={0.5}
+              className="count-up-text"
+            />
             <h6 className="text-secondary">Projects</h6>
           </span>
           <span className="text-center">
-            <Spinner number={2} />
+            <CountUp
+              from={0}
+              to={2}
+              separator=","
+              direction="up"
+              duration={0.5}
+              className="count-up-text"
+            />
             <h6 className="text-secondary">Blogs</h6>
           </span>
           <span className="text-center">
-            <h1 className="text-xl md:text-8xl font-normal flex justify-center items-center">
-              <Spinner number={5} />+
-            </h1>
+            <span className="flex justify-center gap-1">
+              <CountUp
+                from={0}
+                to={5}
+                separator=","
+                direction="up"
+                duration={0.5}
+                className="count-up-text"
+              />
+              <h1 className="text-4xl md:text-8xl font-normal flex justify-center items-center">
+                +
+              </h1>
+            </span>
             <h6 className="text-secondary">Years as developer</h6>
           </span>
           <span className="text-center">
-            <Spinner number={10} />
+            <CountUp
+              from={0}
+              to={11}
+              separator=","
+              direction="up"
+              duration={0.5}
+              className="count-up-text"
+            />
             <h6 className="text-secondary">Videos</h6>
           </span>
         </div>

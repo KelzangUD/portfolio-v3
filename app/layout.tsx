@@ -19,6 +19,9 @@ const geistInter = Inter({
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio Website",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({

@@ -3,8 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import CustomContainer from "../../components/CustomContainer";
-import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-// import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import { Button } from "@/components/ui/moving-border";
 import downArrowsIcon from "@/public/down arrows.svg";
 
@@ -12,35 +10,10 @@ export default function Intro() {
   return (
     <>
       <CustomContainer>
-        {/* <BackgroundRippleEffect /> */}
         <section className="text-left mt-20">
           <h2 className="text-secondary">Kuzuzangpo,</h2>
-          <TypewriterEffectSmooth
-            words={[
-              {
-                text: "I'M",
-              },
-              {
-                text: " ",
-              },
-              {
-                text: "KELZANG",
-              },
-              {
-                text: "",
-              },
-              {
-                text: "UGYEN",
-              },
-              {
-                text: " ",
-              },
-              {
-                text: "DORJI.",
-              },
-            ]}
-          />
-          <div className="flex items-center justify-left md:my-5">
+          <h2>I'm Kelzang Ugyen Dorji</h2>
+          <div className="flex items-center justify-left my-5">
             <p className="text-secondary text-justify leading-5 md:leading-8">
               Currently, am software developer in Tashi InfoComm Private
               Limited. In my spare time, I enjoy creating contents on various
@@ -49,7 +22,7 @@ export default function Intro() {
               the Land of the Thunder Dragon.
             </p>
           </div>
-          <div className="flex gap-4 justify-left my-10 md:my-15">
+          <div className="flex gap-4 justify-left my-5 md:my-15">
             <a
               href="/"
               className="cursor-pointer hover:-translate-y-0.5 transition duration-200"
