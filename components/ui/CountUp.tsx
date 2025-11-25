@@ -126,7 +126,7 @@ export default function CountUp({
   }, [springValue, formatValue]);
 
   return (
-    <h1 className="text-4xl md:text-8xl font-normal flex justify-center items-center">
+    <h1 className="text-4xl md:text-8xl font-semibold flex justify-center items-center">
       <span className={className} ref={ref} />
     </h1>
   );

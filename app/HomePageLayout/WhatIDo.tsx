@@ -1,8 +1,8 @@
 import CustomContainer from "../components/CustomContainer";
 import Title from "@/components/ui/Title";
 import { WhatIDoTextFlip } from "../components/WhatIDoTextFlip";
-import WhatIDoItem from "../components/WhatIDoItem";
 import { whatIDo } from "../data/whatIDo";
+import AnimatedList from "@/components/ui/AnimatedList";
 
 export default function WhatIDo() {
   return (
@@ -14,13 +14,11 @@ export default function WhatIDo() {
             <WhatIDoTextFlip />
           </div>
           <div className="flex flex-col gap-6 md:gap-10 justify-center">
-            {whatIDo?.map((item) => (
-              <WhatIDoItem
-                key={item?.title}
-                icon={item?.icon}
-                title={item?.title}
-              />
-            ))}
+            <AnimatedList
+              items={whatIDo}
+              enableArrowNavigation={true}
+              displayScrollbar={true}
+            />
           </div>
         </div>
       </section>

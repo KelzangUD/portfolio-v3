@@ -22,7 +22,7 @@ export default function Intro() {
               the Land of the Thunder Dragon.
             </p>
           </div>
-          <div className="flex gap-4 justify-left my-5 md:my-15">
+          <div className="flex gap-4 justify-left my-10 md:my-15">
             <a
               href="/"
               className="cursor-pointer hover:-translate-y-0.5 transition duration-200"

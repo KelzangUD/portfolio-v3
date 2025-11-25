@@ -34,7 +34,7 @@ export default function ProfessionalJourney() {
         className="bg-cover bg-top bg-no-repeat bg-white/95 bg-blend-overlay"
       >
         <Title title="Each Experience, A Step Toward Growth & Purpose" />
-        <div className="relative w-full overflow-clip">
+        <div className="relative w-full overflow-clip my-5">
           <Timeline data={data} />
         </div>
       </section>
