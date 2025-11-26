@@ -1,6 +1,6 @@
 import CustomContainer from "@/app/components/CustomContainer";
 import Title from "@/components/ui/Title";
-import serviceBg from "@/public/service_bg.jpg";
+import serviceBg from "@/public/service_bg.webp";
 import AnimatedList from "@/components/ui/AnimatedList";
 import appIcon from "@/public/code.svg";
 import blogIcon from "@/public/blog.svg";

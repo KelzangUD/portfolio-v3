@@ -1,6 +1,6 @@
 import CustomContainer from "@/app/components/CustomContainer";
 import Title from "@/components/ui/Title";
-import professionalJourneyBg from "@/public/professional_journey.jpg";
+import professionalJourneyBg from "@/public/professional_journey.webp";
 import { Timeline } from "@/components/ui/timeline";
 
 const data = [

@@ -3,8 +3,8 @@ import Link from "next/link";
 import CustomContainer from "../components/CustomContainer";
 import Title from "@/components/ui/Title";
 import { VideoCard } from "../components/VideoCard";
-import JomolhariTrekCover from "@/public/Jomolhari Trek.png";
-import DungtshoHikeCover from "@/public/Dungtsho Hike.png";
+import JomolhariTrekCover from "@/public/Jomolhari Trek.webp";
+import DungtshoHikeCover from "@/public/Dungtsho Hike.webp";
 import arrowUpRightIcon from "@/public/arrow-up-right.svg";
 
 export default function Videos() {
