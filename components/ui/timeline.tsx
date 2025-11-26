@@ -1,10 +1,6 @@
 "use client";
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
+import { useScroll, useTransform, motion, useInView } from "motion/react";
+import React, { useEffect, useRef, useState, ReactNode } from "react";
 
 interface TimelineEntry {
   title: string;
@@ -16,6 +12,7 @@ interface TimelineEntry {
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const detailRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -33,13 +30,41 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
+  const inView = useInView(detailRef, { amount: 0.5, once: false });
+
+  interface AnimatedItemProps {
+    children: ReactNode;
+    delay?: number;
+    index: number;
+  }
+
+  const AnimatedItem: React.FC<AnimatedItemProps> = ({
+    children,
+    delay = 0,
+    index,
+  }) => {
+    const ref = useRef<HTMLDivElement>(null);
+    const inView = useInView(ref, { amount: 0.5, once: false });
+    return (
+      <motion.div
+        ref={ref}
+        data-index={index}
+        initial={{ scale: 0.7, opacity: 0 }}
+        animate={inView ? { scale: 1, opacity: 1 } : { scale: 0.7, opacity: 0 }}
+        transition={{ duration: 0.2, delay }}
+      >
+        {children}
+      </motion.div>
+    );
+  };
+
   return (
-    <div className="" ref={containerRef}>
+    <div ref={containerRef}>
       <div ref={ref} className="relative md:max-w-8xl md:mx-auto">
         {data.map((item, index) => (
           <div
             key={index}
-            className="md:flex justify-start pt-5 md:pt-20 md:gap-10"
+            className="md:flex justify-start pt-5 md:pt-20"
           >
             <div className="md:sticky md:flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-6 absolute w-6 rounded-full bg-gray-100 flex items-center justify-center">
@@ -49,16 +74,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {item.title}
               </h3>
             </div>
-
-            <div className="relative pr-4 pl-10 w-full">
+            <div className="pl-10">
               <h3 className="md:hidden block text-2xl md:mb-4 text-left font-bold text-neutral-500 drop-shadow-lg">
                 {item.title}
               </h3>
-              <div>
-                <h6 className="text-secondary">{item.job}</h6>
-                <h4 className="md:my-4 drop-shadow-lg">{item.company}</h4>
-                <h6 className="text-justify md:leading-8">{item.desc}</h6>
-              </div>
+              <AnimatedItem key={index} delay={0.1} index={index}>
+                <div>
+                  <h6 className="text-secondary">{item.job}</h6>
+                  <h4 className="md:my-4 drop-shadow-lg">{item.company}</h4>
+                  <h6 className="text-justify md:leading-8">{item.desc}</h6>
+                </div>
+              </AnimatedItem>
             </div>
           </div>
         ))}

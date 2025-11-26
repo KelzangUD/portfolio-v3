@@ -24,7 +24,13 @@ export const LayoutTextFlip = ({
   }, []);
 
   return (
-    <div className="flex flex-col md:gap-4">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: false }}
+      className="flex flex-col md:gap-4"
+    >
       <div>
         <motion.span
           layout
@@ -43,9 +49,8 @@ export const LayoutTextFlip = ({
           <AnimatePresence mode="popLayout">
             <motion.span
               key={currentIndex}
-              initial={{ y: -40, filter: "blur(10px)" }}
+              initial={{ filter: "blur(10px)" }}
               animate={{
-                y: 0,
                 filter: "blur(0px)",
               }}
               exit={{ y: 50, filter: "blur(10px)", opacity: 0 }}
@@ -59,6 +64,6 @@ export const LayoutTextFlip = ({
           </AnimatePresence>
         </motion.span>
       </div>
-    </div>
+    </motion.div>
   );
 };

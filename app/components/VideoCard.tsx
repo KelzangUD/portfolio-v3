@@ -67,6 +67,10 @@ export const VideoCard = ({
     <motion.div
       onMouseEnter={handleMouseEnter}
       ref={ref}
+      initial={{ y: 60, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: false }}
       className={cn(
         "h-full w-full bg-gray-100 rounded-lg overflow-hidden group/card relative shadow-xs ",
         className
@@ -74,7 +78,7 @@ export const VideoCard = ({
     >
       <AnimatePresence mode="wait">
         <motion.div
-          className="relative h-50 sm:h-80 md:h-45 2xl:h-120 w-full rounded-2xl overflow-hidden"
+          className="relative h-50 sm:h-80 md:h-45 2xl:h-100 w-full rounded-2xl overflow-hidden"
           initial="initial"
           whileHover={direction}
           exit="exit"

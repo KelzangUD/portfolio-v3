@@ -11,8 +11,8 @@ export default function Intro() {
     <>
       <CustomContainer>
         <section className="text-left mt-20">
-          <h2 className="text-secondary">Kuzuzangpo,</h2>
-          <h2>I'm Kelzang Ugyen Dorji</h2>
+          <h1 className="text-secondary">Kuzuzangpo,</h1>
+          <h1 className="my-4">I'm Kelzang Ugyen Dorji</h1>
           <div className="flex items-center justify-left my-5">
             <p className="text-secondary text-justify leading-5 md:leading-8">
               Currently, am software developer in Tashi InfoComm Private

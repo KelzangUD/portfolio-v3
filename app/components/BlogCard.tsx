@@ -73,6 +73,10 @@ export const BlogCard = ({
     <motion.div
       onMouseEnter={handleMouseEnter}
       ref={ref}
+      initial={{ y: 60, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: false }}
       className={cn(
         "h-full w-full bg-gray-100 rounded-lg overflow-hidden group/card relative shadow-xs ",
         className
@@ -104,7 +108,9 @@ export const BlogCard = ({
         </motion.div>
       </AnimatePresence>
       <motion.div className="p-4">
-        <p className="text-sm md:text-base font-semibold">{title} | <span className="text-secondary">{category}</span></p>
+        <p className="text-sm md:text-base font-semibold">
+          {title} | <span className="text-secondary">{category}</span>
+        </p>
         <p className="text-sm md:text-base text-secondary my-2">{subtitle}</p>
       </motion.div>
       <motion.div className="flex justify-between gap-2 items-center p-4">

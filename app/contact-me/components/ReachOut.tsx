@@ -39,12 +39,11 @@ export const ReactOut = ({
         <AnimatePresence mode="popLayout">
           <motion.span
             key={currentIndex}
-            initial={{ y: -40, filter: "blur(10px)" }}
+            initial={{ filter: "blur(10px)" }}
             animate={{
-              y: 0,
               filter: "blur(0px)",
             }}
-            exit={{ y: 50, filter: "blur(10px)", opacity: 0 }}
+            exit={{ filter: "blur(10px)", opacity: 0 }}
             transition={{
               duration: 0.5,
             }}

@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 
-
 import React, {
   createContext,
   useState,
@@ -10,6 +9,7 @@ import React, {
   useRef,
   useEffect,
 } from "react";
+import { motion } from "motion/react";
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
@@ -47,33 +47,37 @@ export const CardContainer = ({
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
   return (
-    <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
-      <div
-        className={cn(
-          "flex items-center justify-center",
-          containerClassName
-        )}
-        style={{
-          perspective: "1000px",
-        }}
-      >
+    <motion.div
+      initial={{ y: 60, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: false }}
+    >
+      <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
         <div
-          ref={containerRef}
-          onMouseEnter={handleMouseEnter}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-          className={cn(
-            "flex items-center justify-center relative transition-all duration-200 ease-linear",
-            className
-          )}
+          className={cn("flex items-center justify-center", containerClassName)}
           style={{
-            transformStyle: "preserve-3d",
+            perspective: "1000px",
           }}
         >
-          {children}
+          <div
+            ref={containerRef}
+            onMouseEnter={handleMouseEnter}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            className={cn(
+              "flex items-center justify-center relative transition-all duration-200 ease-linear",
+              className
+            )}
+            style={{
+              transformStyle: "preserve-3d",
+            }}
+          >
+            {children}
+          </div>
         </div>
-      </div>
-    </MouseEnterContext.Provider>
+      </MouseEnterContext.Provider>
+    </motion.div>
   );
 };
 

@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import CustomContainer from "../components/CustomContainer";
 import Title from "@/components/ui/Title";
 import { ReactOut } from "./components/ReachOut";
@@ -9,12 +12,23 @@ export default function ContactMe() {
       <section className="mt-25">
         <Title title="Let’s Connect" />
         <div className="grid xl:grid-cols-2 gap-6 2xl:gap-8 my-5">
-          <div className="flex items-center">
+          <motion.div
+            initial={{ x: -60 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: false }}
+            className="flex items-center"
+          >
             <ReactOut />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ x: 60 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: false }}
+          >
             <ContactForm />
-          </div>
+          </motion.div>
         </div>
       </section>
     </CustomContainer>

@@ -6,7 +6,6 @@ import React, {
   useEffect,
   ReactNode,
   MouseEventHandler,
-  UIEvent,
 } from "react";
 import { motion, useInView } from "motion/react";
 import Image, { StaticImageData } from "next/image";
@@ -122,7 +121,7 @@ const AnimatedList: React.FC<AnimatedListProps> = ({
                 <h4 className="drop-shadow-lg text-black mt-2">
                   {item?.title}
                 </h4>
-                <p className="text-secondary font-normal text-xs md:text-sm lg:text-base xl:text-xl md:leading-8">
+                <p className="text-secondary text-justify font-normal text-xs md:text-sm lg:text-base xl:text-xl md:leading-8">
                   {item?.subtitle}
                 </p>
               </span>
