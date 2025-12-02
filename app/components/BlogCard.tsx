@@ -73,7 +73,7 @@ export const BlogCard = ({
     <motion.div
       onMouseEnter={handleMouseEnter}
       ref={ref}
-      initial={{ y: 60, opacity: 0 }}
+      initial={{ y: 10, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: false }}
@@ -84,7 +84,7 @@ export const BlogCard = ({
     >
       <AnimatePresence mode="wait">
         <motion.div
-          className="relative h-50 sm:h-80 md:h-85 xl:h-100 2xl:h-120 w-full rounded-2xl overflow-hidden"
+          className="relative h-50 sm:h-80 md:h-85 xl:h-90 w-full rounded-2xl overflow-hidden"
           initial="initial"
           whileHover={direction}
           exit="exit"

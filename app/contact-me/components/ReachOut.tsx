@@ -23,7 +23,13 @@ export const ReactOut = ({
   }, []);
 
   return (
-    <div className="md:gap-4 flex flex-col">
+    <motion.div
+      initial={{ x: -10 }}
+      whileInView={{ x: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="md:gap-4 flex flex-col"
+    >
       <div>
         <motion.span
           layoutId="subtext"
@@ -34,7 +40,7 @@ export const ReactOut = ({
       </div>
       <motion.span
         layout
-        className="relative w-fit font-bold tracking-tight text-secondary drop-shadow-lg text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+        className="relative w-fit font-bold tracking-tight text-secondary drop-shadow-lg text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
       >
         <AnimatePresence mode="popLayout">
           <motion.span
@@ -53,6 +59,6 @@ export const ReactOut = ({
           </motion.span>
         </AnimatePresence>
       </motion.span>
-    </div>
+    </motion.div>
   );
 };
