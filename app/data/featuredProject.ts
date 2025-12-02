@@ -1,5 +1,5 @@
-import portfolioMockUp from "@/public/portfolio_mockup.webp";
-import jomolhariVacationMockUp from "@/public/jomolhari_vacation_mockup.webp";
+import portfolioMockUp from "@/public/portfolio-mockup.webp";
+import jomolhariVacationMockUp from "@/public/jomolhari-vacation-website-mockup.webp";
 
 export const featuredProjects = [
   {
