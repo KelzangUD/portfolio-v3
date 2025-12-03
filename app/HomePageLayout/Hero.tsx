@@ -20,7 +20,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             viewport={{ once: false }}
           >
-            <h6 className="text-secondary">Hello,I'm Kelzang Ugyen Dorji</h6>
+            <h6 className="text-secondary">Hello, I'm Kelzang Ugyen Dorji</h6>
             <h6 className="text-secondary md:my-1">
               A Full-Stack Developer | IoT Enthusiast | Aspiring Content Creator
             </h6>

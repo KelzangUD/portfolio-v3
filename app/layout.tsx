@@ -17,11 +17,47 @@ const geistInter = Inter({
   subsets: ["latin"],
 });
 
+const domainName = "https://www.kelzangud.com/";
+
 export const metadata: Metadata = {
-  title: "KUD",
-  description: "Portfolio Website developed in NextJS",
+  metadataBase: new URL(domainName),
+  title: {
+    default: "KUD",
+    template: "%s | KUD",
+  },
   icons: {
     icon: "/logo.svg",
+  },
+  description: "Portfolio website of Kelzang Ugyen Dorji",
+  keywords: [
+    "Kelzang Ugyen Dorji",
+    "Portfolio",
+    "ReactJS",
+    "NextJS",
+    "TailwindCSS",
+    "Developer",
+    "Content creator",
+    "Bhutan",
+  ],
+  authors: [{ name: "Kelzang Ugyen Dorji", url: domainName }],
+  openGraph: {
+    type: "website",
+    locale: "en_BT",
+    url: domainName,
+    title: "Kelzang Ugyen Dorji",
+    description: "Portfolio website of Kelzang Ugyen Dorji",
+    siteName: "Kelzang Ugyen Dorji",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 512,
+        height: 512,
+        alt: "KUD Logo",
+      },
+    ],
+  },
+  alternates: {
+    canonical: domainName,
   },
 };
 
