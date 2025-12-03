@@ -11,7 +11,7 @@ export default function Stats() {
           <span className="text-center">
             <CountUp
               from={0}
-              to={2}
+              to={1}
               separator=","
               direction="up"
               duration={0.5}
