@@ -18,8 +18,8 @@ const geistInter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio Website",
+  title: "KUD",
+  description: "Portfolio Website developed in NextJS",
   icons: {
     icon: "/logo.svg",
   },
