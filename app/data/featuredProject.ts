@@ -1,5 +1,5 @@
 import portfolioMockUp from "@/public/portfolio-mockup.webp";
-import jomolhariVacationMockUp from "@/public/jomolhari-vacation-website-mockup.webp";
+// import jomolhariVacationMockUp from "@/public/jomolhari-vacation-website-mockup.webp";
 
 export const featuredProjects = [
   {
@@ -8,10 +8,10 @@ export const featuredProjects = [
     about: "Personal Project",
     href: "/",
   },
-  {
-    mockUp: jomolhariVacationMockUp,
-    title: "Jomolhari Vacation",
-    about: "Travel Agent Website",
-    href: "/",
-  },
+  // {
+  //   mockUp: jomolhariVacationMockUp,
+  //   title: "Jomolhari Vacation",
+  //   about: "Travel Agent Website",
+  //   href: "/",
+  // },
 ];
