@@ -78,41 +78,43 @@ export const BlogCard = ({
       transition={{ duration: 0.5 }}
       viewport={{ once: false }}
       className={cn(
-        "h-full w-full bg-gray-100 rounded-lg overflow-hidden group/card relative shadow-xs ",
+        "h-full w-full flex flex-col justify-between bg-gray-100 rounded-lg overflow-hidden group/card relative shadow-xs",
         className
       )}
     >
-      <AnimatePresence mode="wait">
-        <motion.div
-          className="relative h-50 sm:h-80 md:h-85 xl:h-90 w-full rounded-2xl overflow-hidden"
-          initial="initial"
-          whileHover={direction}
-          exit="exit"
-        >
-          <motion.div className="group-hover/card:block hidden absolute w-full h-full bg-black/40 z-10 transition duration-500" />
+      <div>
+        <AnimatePresence mode="wait">
           <motion.div
-            variants={variants}
-            className="h-full w-full relative bg-gray-50 dark:bg-black"
-            transition={{
-              duration: 0.2,
-              ease: "easeOut",
-            }}
+            className="relative h-50 sm:h-80 md:h-85 xl:h-90 w-full rounded-2xl overflow-hidden"
+            initial="initial"
+            whileHover={direction}
+            exit="exit"
           >
-            <Image
-              alt="image"
-              className={cn("object-cover scale-[1.15]", imageClassName)}
-              fill
-              src={imageUrl}
-            />
+            <motion.div className="group-hover/card:block hidden absolute w-full h-full bg-black/40 z-10 transition duration-500" />
+            <motion.div
+              variants={variants}
+              className="h-full w-full relative bg-gray-50 dark:bg-black"
+              transition={{
+                duration: 0.2,
+                ease: "easeOut",
+              }}
+            >
+              <Image
+                alt="image"
+                className={cn("object-cover scale-[1.15]", imageClassName)}
+                fill
+                src={imageUrl}
+              />
+            </motion.div>
           </motion.div>
+        </AnimatePresence>
+        <motion.div className="p-4">
+          <p className="text-sm md:text-base font-semibold">
+            {title} | <span className="text-secondary">{category}</span>
+          </p>
+          <p className="text-sm md:text-base text-secondary my-2">{subtitle}</p>
         </motion.div>
-      </AnimatePresence>
-      <motion.div className="p-4">
-        <p className="text-sm md:text-base font-semibold">
-          {title} | <span className="text-secondary">{category}</span>
-        </p>
-        <p className="text-sm md:text-base text-secondary my-2">{subtitle}</p>
-      </motion.div>
+      </div>
       <motion.div className="flex justify-between gap-2 items-center p-4">
         <span>
           <p className="text-sm md:text-base font-semibold">{author}</p>
@@ -163,34 +165,5 @@ const variants = {
   },
   right: {
     x: -20,
-  },
-};
-
-const textVariants = {
-  initial: {
-    y: 0,
-    x: 0,
-    opacity: 0,
-  },
-  exit: {
-    y: 0,
-    x: 0,
-    opacity: 0,
-  },
-  top: {
-    y: -20,
-    opacity: 1,
-  },
-  bottom: {
-    y: 2,
-    opacity: 1,
-  },
-  left: {
-    x: -2,
-    opacity: 1,
-  },
-  right: {
-    x: 20,
-    opacity: 1,
   },
 };
