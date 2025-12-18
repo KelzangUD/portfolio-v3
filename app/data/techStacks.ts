@@ -1,6 +1,7 @@
 import reactJsIcon from "@/public/react js.svg";
 import nextjsIcon from "@/public/next js.svg";
 import tailwindCssIcon from "@/public/tailwind.svg";
+import bootstrapIcon from "@/public/bootstrap.svg";
 import materialUiIcon from "@/public/mui.svg";
 import expressJsIcon from "@/public/express.svg";
 import mysqlIcon from "@/public/mysql.svg";
@@ -8,6 +9,8 @@ import blenderIcon from "@/public/blender.svg";
 import pitopIcon from "@/public/pi-top.svg";
 import arduinoIcon from "@/public/arduino.svg";
 import premierProIcon from "@/public/premier pro.svg";
+import vnEditorIcon from "@/public/vn.svg";
+import capcutIcon from "@/public/capcut.svg";
 
 export const techStacks = [
   {
@@ -21,6 +24,10 @@ export const techStacks = [
   {
     name: "Tailwind CSS",
     image: tailwindCssIcon,
+  },
+  {
+    name: "Bootstrap",
+    image: bootstrapIcon,
   },
   {
     name: "Material UI",
@@ -49,5 +56,13 @@ export const techStacks = [
   {
     name: "Premier Pro",
     image: premierProIcon,
+  },
+  {
+    name: "VN Editor",
+    image: vnEditorIcon,
+  },
+  {
+    name: "Capcut",
+    image: capcutIcon,
   },
 ];
