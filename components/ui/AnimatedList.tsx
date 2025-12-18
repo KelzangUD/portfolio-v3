@@ -107,7 +107,7 @@ const AnimatedList: React.FC<AnimatedListProps> = ({
         }}
       >
         {items.map((item, index) => (
-          <AnimatedItem key={index} delay={0.1} index={index}>
+          <AnimatedItem key={index} delay={0.2} index={index}>
             <span className="flex items-center align-center">
               <span className="relative w-4 h-4 md:w-10 md:h-10 p-4 md:p-6">
                 <Image
