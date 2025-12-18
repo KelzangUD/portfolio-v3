@@ -18,7 +18,7 @@ const items = [
     icon: blogIcon,
     title: "Blogging",
     subtitle:
-      "My thoughts about sharing what I ve learned and experienced, may not be just be particular field or discipline led me to blogging",
+      "My thoughts about sharing what I've learned and experienced, may not be in particular field or discipline led me to blogging",
   },
   {
     icon: reelIcon,

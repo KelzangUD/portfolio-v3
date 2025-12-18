@@ -1,4 +1,5 @@
 import reactJsIcon from "@/public/react js.svg";
+import nextjsIcon from "@/public/next js.svg";
 import tailwindCssIcon from "@/public/tailwind.svg";
 import materialUiIcon from "@/public/mui.svg";
 import expressJsIcon from "@/public/express.svg";
@@ -12,6 +13,10 @@ export const techStacks = [
   {
     name: "React JS",
     image: reactJsIcon,
+  },
+  {
+    name: "Next JS",
+    image: nextjsIcon,
   },
   {
     name: "Tailwind CSS",
